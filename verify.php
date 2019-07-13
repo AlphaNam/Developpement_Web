@@ -35,8 +35,10 @@ if($result){
 }
 
 function redirect() {
-  echo '<h1>Invalid Login! Redirecting...</h1>';
-  header("Refresh: 3; url=index.php");
+    echo "<script type='text/javascript'>
+                alert('Invalid User Information ! Restart!');
+            </script>";
+  header("Refresh: 3; url=login.php");
 }
 
 
