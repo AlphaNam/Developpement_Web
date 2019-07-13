@@ -52,7 +52,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <div class="row" style="margin-top:30px;">
       <div class="small-12">
 
-        <p>Wanna get in touch. Email us at <a href="mailto:support@techbarrack.com">support@techbarrack.com</a></p>
+        <p>Any questions ? Email us at <a href="mailto:agike@gmail.com">agike@gmail.com</a></p>
 
         <footer>
            <p style="text-align:center; font-size:0.8em;">&copy; Agike Sports Shop. All Rights Reserved.</p>
