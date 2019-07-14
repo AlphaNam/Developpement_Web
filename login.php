@@ -17,6 +17,7 @@ if(isset($_SESSION["username"])){
     <title>Login || Agike Sports Shop</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/sweetalert.min.js"></script>
   </head>
   <body>
 

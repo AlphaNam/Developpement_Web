@@ -4,6 +4,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
 include 'config.php';
 
+
 $username = $_POST["username"];
 $password = $_POST["pwd"];
 $flag = 'true';
@@ -36,49 +37,22 @@ if($result){
 }
 
 function redirect() {
-    /*echo "<script type='text/javascript'>
-                alert('Invalid User Information ! Restart!');
-            </script>";
-    */
-    /*echo '<html>';
-    echo '<head>';
-    echo '<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>';
-    echo '<script type="text/javascript"></script>';
-    echo '<head>';
+  include"login.php";
+  echo "<script>
+          swal({
+          title: \"Wrong email or password !\",
+          text: \"Please retry or create an account ! \",
+          icon: \"error\"
+          })
+          .then(() => {
+              window.location.href = \"login.php\";
+              
+          });
+       </script>";
 
-
-
-
-    Swal.fire('test');
-    echo '</html>';
-    echo '<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>';
-    echo "<script language=\"javascript\">";
-    /*echo "Swal.fire({";
-    echo "  title: 'Error!',";
-    echo "  text: 'Do you want to continue',";
-    echo "  type: 'error',";
-    echo "  confirmButtonText: 'Cool'";
-    echo '})';
-    echo "Swal.fire({
-  title: 'Error!',
-  text: 'Do you want to continue',
-  type: 'error',
-  confirmButtonText: 'Cool'
-})";
-    echo '</script>';*/
-
-
-echo "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css\">";
-echo "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js\">";
-echo 'sweetAlert("a", "b", "error");';
-echo "</script>";
-
-
-
-
-  header("Refresh: 10; url=login.php");
 }
 
 
 
 ?>
+
