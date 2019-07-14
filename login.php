@@ -34,7 +34,12 @@ if(isset($_SESSION["username"])){
           <li><a href="about.php">About</a></li>
           <li><a href="products.php">Products</a></li>
           <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
+            <?php
+
+            if(isset($_SESSION['username'])){
+                echo '<li><a href="orders.php">My Orders</a></li>';
+            }
+            ?>
           <li><a href="contact.php">Contact</a></li>
           <?php
 
@@ -81,8 +86,8 @@ if(isset($_SESSION["username"])){
 
             </div>
             <div class="small-8 columns">
-              <input type="submit" id="right-label" value="Login" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px;">
-              <input type="reset" id="right-label" value="Reset" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px;">
+              <input type="submit" id="right-label" value="Login" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px; border-radius: 10px;">
+              <input type="reset" id="right-label" value="Reset" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px; border-radius: 10px;">
             </div>
           </div>
         </div>

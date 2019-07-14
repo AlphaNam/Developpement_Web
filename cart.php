@@ -33,7 +33,12 @@ include 'config.php';
           <li><a href="about.php">About</a></li>
           <li><a href="products.php">Products</a></li>
           <li class="active"><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
+            <?php
+
+            if(isset($_SESSION['username'])){
+                echo '<li><a href="orders.php">My Orders</a></li>';
+            }
+            ?>
           <li><a href="contact.php">Contact</a></li>
           <?php
 
@@ -101,7 +106,7 @@ include 'config.php';
           echo '<tr>';
           echo '<td colspan="4" align="right"><a href="update-cart.php?action=empty" class="button alert">Empty Cart</a>&nbsp;<a href="products.php" class="button [secondary success alert]">Continue Shopping</a>';
           if(isset($_SESSION['username'])) {
-            echo '<a href="orders-update.php"><button style="float:right;">COD</button></a>';
+            echo '<a href="orders-update.php"><button style="float:right;">Order</button></a>';
           }
 
           else {
@@ -135,7 +140,7 @@ include 'config.php';
 
 
         <footer style="margin-top:10px;">
-           <p style="text-align:center; font-size:0.8em;clear:both;">&copy; BOLT Sports Shop. All Rights Reserved.</p>
+           <p style="text-align:center; font-size:0.8em;clear:both;">&copy; Agike Sports Shop. All Rights Reserved.</p>
         </footer>
 
       </div>

@@ -314,6 +314,7 @@ select {
     width: 91.66667%; }
 
   .small-12 {
+    display: inline-block;
     width: 100%; }
 
   .small-offset-0 {
@@ -1096,6 +1097,7 @@ button, .button {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
+  border-radius: 10px;
   padding-top: 1rem;
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
@@ -1120,6 +1122,7 @@ button, .button {
   button.success, .button.success {
     background-color: #43ac6a;
     border-color: #368a55;
+    border-radius: 10px;
     color: white; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       background-color: #368a55; }
@@ -1128,7 +1131,8 @@ button, .button {
   button.alert, .button.alert {
     background-color: #f04124;
     border-color: #cf2a0e;
-    color: white; }
+    color: white;
+  border-radius: 10px;}
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       background-color: #cf2a0e; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
@@ -1528,7 +1532,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: #008cba;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";

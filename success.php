@@ -1,6 +1,5 @@
 <?php
 
-//if (session_status() !== PHP_SESSION_ACTIVE) {session_start();}
 if(session_id() == '' || !isset($_SESSION)){session_start();}
 
 ?>
@@ -30,7 +29,12 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
           <li><a href="about.php">About</a></li>
           <li><a href="products.php">Products</a></li>
           <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
+            <?php
+
+            if(isset($_SESSION['username'])){
+                echo '<li><a href="orders.php">My Orders</a></li>';
+            }
+            ?>
           <li><a href="contact.php">Contact</a></li>
           <?php
 

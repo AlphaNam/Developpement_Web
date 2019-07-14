@@ -28,8 +28,13 @@ include 'config.php';
         <ul class="right">
           <li><a href="about.php">About</a></li>
           <li class='active'><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
+          <li><a href="cart.php">View Cart </a></li>
+            <?php
+
+            if(isset($_SESSION['username'])){
+                echo '<li><a href="orders.php">My Orders</a></li>';
+            }
+            ?>
           <li><a href="contact.php">Contact</a></li>
           <?php
 
@@ -76,7 +81,7 @@ include 'config.php';
 
 
               if($obj->qty > 0){
-                echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
+                echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px; border-radius: 10px;" /></a></p>';
               }
               else {
                 echo 'Out Of Stock!';
