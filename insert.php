@@ -11,10 +11,19 @@ $email = $_POST["email"];
 $pwd = $_POST["pwd"];
 
 if($mysqli->query("INSERT INTO users (fname, lname, address, city, pin, email, password) VALUES('$fname', '$lname', '$address', '$city', $pin, '$email', '$pwd')")){
-	echo 'Data inserted';
-	echo '<br/>';
+    include 'register.php';
+	echo "<script>
+          swal({
+          title: \"Account registered!\",
+          text: \"You are successfully registered and now redirected to login page ! \",
+          icon: \"success\"
+          })
+          .then(() => {
+              window.location.href = \"login.php\";
+          });
+       </script>";
 }
 
-header ("location:login.php");
+//header ("location:login.php");
 
 ?>

@@ -38,7 +38,7 @@ if($result) {
 
 
 
-header ("location:success.php");
+header ("location:success-admin.php");
 
 
 

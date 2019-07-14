@@ -12,6 +12,7 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     <title>Agike Sports Shop</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/sweetalert.min.js"></script>
   </head>
   <body>
 
@@ -78,3 +79,15 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
     </script>
   </body>
 </html>
+
+<?php 	echo "<script>
+          swal({
+          title: \"Order passed !\",
+          text: \"You have successfully passed your order ! \",
+          icon: \"success\"
+          })
+          .then(() => {
+              window.location.href = \"index.php\";
+          });
+       </script>";
+?>

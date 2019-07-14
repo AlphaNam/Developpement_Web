@@ -7,7 +7,7 @@ include 'config.php';
 
 $username = $_POST["username"];
 $password = $_POST["pwd"];
-$flag = 'true';
+$flag = 0;
 
 //$query = $mysqli->query("SELECT email, password from users");
 
@@ -25,12 +25,12 @@ if($result){
       $_SESSION['type'] = $obj->type;
       $_SESSION['id'] = $obj->id;
       $_SESSION['fname'] = $obj->fname;
-      header("location:index.php");
+      user_recognized();
+      //header("location:index.php");
     } else {
-
-        if($flag === 'true'){
+        if($flag === 0){
           redirect();
-          $flag = 'false';
+          $flag = -1;
         }
     }
   }
@@ -52,7 +52,20 @@ function redirect() {
 
 }
 
+function user_recognized()
+{
+    echo "<script>
+          swal({
+          title: \"Hi bro !\",
+          text: \"Pleasure to see you again ! \",
+          icon: \"success\"
+          })
+          .then(() => {
+              window.location.href = \"index.php\";
+          });
+       </script>";
 
+}
 
 ?>
 
