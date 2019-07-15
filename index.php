@@ -52,65 +52,67 @@ include 'config.php';
       </section>
     </nav>
 
-
-
-
     <img data-interchange="[images/agike-retina.jpg, (retina)], [images/agike-landscape.jpg, (large)], [images/agike-mobile.jpg, (mobile)], [images/agike-landscape.jpg, (medium)]">
     <noscript><img src="images/agike-landscape.jpg"></noscript>
 
     <div class="row" style="margin-top:10px;">
-        <div class="small-12">
-            <?php
-            $i=0;
-            $j=0;
-            $product_id = array();
-            $product_quantity = array();
+    <?php
+          $i=0;
+          $product_id = array();
+          $product_quantity = array();
 
-            $result = $mysqli->query('SELECT * FROM products');
-            if($result === FALSE){
-                die(mysql_error());
+          $result = $mysqli->query('SELECT * FROM products');
+          if($result === FALSE){
+            die(mysql_error());
+          }
+
+          if($result){
+			$j=3;
+            while($obj = $result->fetch_object()) {
+			  if ($j%3 == 0){
+				   echo "\n </div>	<div class=\"row\" style=\"margin-top:10px\"> \n\n";
+			  }
+              echo '<div class="large-4 columns">';
+              echo '<p><h3>'.$obj->product_name.'</h3></p>';
+              echo '<img src="images/products/'.$obj->product_img_name.'"/>';
+              echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
+              echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
+              echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
+              echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
+			 
+			  
+			
+              if($obj->qty > 0){
+                echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px; border-radius: 10px;" /></a></p>';
+              }
+              else {
+                echo 'Out Of Stock!';
+              }
+              echo '</div>';
+			  
+			  echo "\n\n";
+
+              $i++;
+			  $j++;
             }
 
-            if($result){
+          }
 
-                while($obj = $result->fetch_object()) {
-
-                    echo '<div class="large-4 columns">';
-                    echo '<p><h3>'.$obj->product_name.'</h3></p>';
-                    echo '<img src="images/products/'.$obj->product_img_name.'"/>';
-                    echo '<br><br><br><br>';
-                    echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
-                    echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
-                    echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
+          $_SESSION['product_id'] = $product_id;
 
 
+          echo '</div>';
+          echo '</div>';
+          ?>
 
-                    if($obj->qty > 0){
-                        echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px; border-radius: 10px;" /></a></p>';
-                    }
-                    else {
-                        echo 'Out Of Stock! Come back soon !';
-                    }
-                    echo '</div>';
-
-                    $i++;
-                    $j++;
-                }
-
-            }
-
-            $_SESSION['product_id'] = $product_id;
+        <div class="row" style="margin-top:10px;">
+          <div class="small-12">
 
 
-            echo '</div>';
-            echo '</div>';
-            ?>
 
-    <div class="row" style="margin-top:10px;">
-      <div class="small-12">
 
         <footer style="margin-top:10px;">
-           <p style="text-align:center; font-size:0.8em;">&copy; Agike Sports Shop. All Rights Reserved.</p>
+           <p style="text-align:center; font-size:0.8em;clear:both;">&copy; Agike Sports Shop. All Rights Reserved.</p>
         </footer>
 
       </div>
@@ -125,7 +127,5 @@ include 'config.php';
     <script>
       $(document).foundation();
     </script>
-
-
   </body>
 </html>
