@@ -54,7 +54,7 @@ include 'config.php';
 
 
 
-    <div class="row" style="margin-top:10px;">
+   
       <div class="small-12">
         <?php
           $i=0;
@@ -67,9 +67,11 @@ include 'config.php';
           }
 
           if($result){
-
+			$j=3;
             while($obj = $result->fetch_object()) {
-
+			  if ($j%3 == 0){
+				   echo "\n </div>	<div class=\"row\" style=\"margin-top:10px\"> \n\n";
+			  }
               echo '<div class="large-4 columns">';
               echo '<p><h3>'.$obj->product_name.'</h3></p>';
               echo '<img src="images/products/'.$obj->product_img_name.'"/>';
@@ -77,9 +79,9 @@ include 'config.php';
               echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
               echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
               echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
-
-
-
+			 
+			  
+			
               if($obj->qty > 0){
                 echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px; border-radius: 10px;" /></a></p>';
               }
@@ -87,8 +89,11 @@ include 'config.php';
                 echo 'Out Of Stock!';
               }
               echo '</div>';
+			  
+			  echo "\n\n";
 
               $i++;
+			  $j++;
             }
 
           }

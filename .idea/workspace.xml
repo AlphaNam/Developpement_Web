@@ -2,83 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f12f763-0544-4a67-83c8-f110e134d353" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/bin/postinstall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/dist/sweetalert2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/SweetAlert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/animations.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/enhancers/withNoNewKeyword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/globalState.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/_main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/close.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/enable-disable-elements.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/getInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/hideLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/progress-steps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/show-reset-validation-error.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/instanceMethods/update.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/privateProps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/argsToParams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/dom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/fire.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/mixin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/showLoading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/staticMethods/timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/sweetalert2.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/toasts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/DismissReason.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/Timer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/aria.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/defaultInputValidators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/animationEndEvent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/domUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/getters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/inputUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/measureScrollbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/parseHtmlToContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/render.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderCloseButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderContent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderFooter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderHeader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderIcon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderImage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderPopup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderProgressSteps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/dom/renderers/renderTitle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/ieFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/iosFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/isNodeEnv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/openPopup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/params.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/scrollbarFix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/setParameters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/utils/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/src/variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sweetalert2/sweetalert2.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/verify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,29 +16,31 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/verify.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/foundation.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-646">
+            <state relative-caret-position="323">
               <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -174,6 +100,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -201,25 +128,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563099574681</updated>
-      <workItem from="1563099575788" duration="4230000" />
+      <workItem from="1563099575788" duration="4409000" />
+      <workItem from="1563185592437" duration="4000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4230000" />
+    <option name="totallyTimeSpent" value="4413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.3289689" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -227,41 +149,46 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/about.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/orders.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/about.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
+        <state relative-caret-position="323">
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/verify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
