@@ -26,6 +26,7 @@ include 'config.php';
     <title>My Account || Agike Sports Shop</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/sweetalert.min.js"></script>
   </head>
   <body>
 
@@ -182,9 +183,13 @@ include 'config.php';
               <input type="reset" id="right-label" value="Reset" style="background: #0078A0; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px; border-radius: 10px;">
             </div>
           </div>
-        </div>
       </div>
     </form>
+
+    <form method="POST" action="update.php" style="margin-top:30px;">
+    <a href="delete.php" style="display: block ; text-align: center">
+        <input type="button" id="left-label" value="Delete" style="background: red; margin-left: 50px; text-align: center; left:50%; horiz-align: center; border: none; color: #fff; font-family: 'Helvetica Neue', sans-serif; font-size: 1em; padding: 10px; border-radius: 10px;">
+    </a>
 
 
 

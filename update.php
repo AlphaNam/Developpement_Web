@@ -50,19 +50,11 @@ if($email!=""){
   }
 }
 
-//$result = $mysqli->query('Select password from users WHERE id ='.$_SESSION['id']);
-
-//$obj = $result->fetch_object();
-
-if(/*$opwd === $obj->password &&*/ $pwd!=""){
+if($pwd!=""){
   $query = $mysqli->query('UPDATE users SET password ="'. $pwd .'" WHERE id ='.$_SESSION['id']);
   if($query){
   }
 }
-
-//else {
-//  echo 'Wrong Password. Please try again. <a href="account.php">Go Back</a>';
-//}
 
 header("location:success.php");
 
